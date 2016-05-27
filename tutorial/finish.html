@@ -1,8 +1,5 @@
 
 
-
-          
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -48,26 +45,27 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-nav-search">
-        
-
-        
-          <a href="index.html" class="icon icon-home"> Sphinx Tutorial
-        
-
-        
-        </a>
-
-        
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
           
-          
-            <div class="version">
-              1.0
-            </div>
-          
-        
 
-        
+          
+            <a href="index.html" class="icon icon-home"> Sphinx Tutorial
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,21 +74,14 @@
   </form>
 </div>
 
-        
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        
-
           
-          
+        </div>
 
-
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
-
-          
-          
-              <p class="caption"><span class="caption-text">Tutorial</span></p>
+            
+            
+                <p class="caption"><span class="caption-text">Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="start.html">Getting Started: Overview &amp; Introduction to Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="step-1.html">Step 1: Getting started with RST</a></li>
@@ -107,8 +98,6 @@
 <p class="caption"><span class="caption-text">Supplemental Material</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Cheat Sheet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="useful-links.html">Useful Links</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Step 1</span></p>
 <ul>
@@ -123,13 +112,10 @@
 <li class="toctree-l1"><a class="reference internal" href="crawler/docs/step3/index.html">Crawler Step 3 Documentation</a></li>
 </ul>
 
+            
           
-
-          
-
-        
+        </div>
       </div>
-      &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -144,7 +130,13 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
@@ -166,11 +158,12 @@
 take some time to play around and get to know Sphinx better.
 There is a large ecosystem of extensions,
 and lots of builtin features we haven&#8217;t covered.</p>
+<p>I&#8217;m happy to consult with you about interesting challanges you might be facing with docs.</p>
 <p>Part of being a good user of Sphinx is knowing what all is there.
 Here are a few options for what to look at:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://sphinx-doc.org/extdev/index.html#dev-extensions" title="(in Sphinx v1.3.1+)"><span>Developing extensions for Sphinx</span></a></li>
-<li>Read through all the existing <a class="reference external" href="http://sphinx-doc.org/extensions.html#extensions" title="(in Sphinx v1.3.1+)"><span>Sphinx Extensions</span></a></li>
+<li><a class="reference external" href="http://sphinx-doc.org/extdev/index.html#dev-extensions" title="(in Sphinx v1.4.1)"><span>Developing extensions for Sphinx</span></a></li>
+<li>Read through all the existing <a class="reference external" href="http://sphinx-doc.org/extensions.html#extensions" title="(in Sphinx v1.4.1)"><span>Sphinx Extensions</span></a></li>
 <li><a class="reference external" href="http://breathe.readthedocs.org/en/latest/">Breathe</a></li>
 <li>Explore the Read the Docs Admin Panel</li>
 <li>Apply these docs to a project you have</li>
@@ -237,7 +230,7 @@ If you do a <code class="docutils literal"><span class="pre">make</span> <span c
 you should get a gettext catalog for your documentation.
 Check for it in <code class="docutils literal"><span class="pre">_build/locale</span></code>.</p>
 <p>You can then use these files to translate your documentation using most standard tools.
-You can read more about this in Sphinx&#8217;s <a class="reference external" href="http://sphinx-doc.org/intl.html#intl" title="(in Sphinx v1.3.1+)"><span>Internationalization</span></a> doc.</p>
+You can read more about this in Sphinx&#8217;s <a class="reference external" href="http://sphinx-doc.org/intl.html#intl" title="(in Sphinx v1.4.1)"><span>Internationalization</span></a> doc.</p>
 </div>
 <div class="section" id="play-with-sphinx-autoapi">
 <h2><a class="toc-backref" href="#id3">Play with Sphinx autoapi</a><a class="headerlink" href="#play-with-sphinx-autoapi" title="Permalink to this headline">¶</a></h2>
@@ -301,7 +294,7 @@ Try this piece of code:</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 

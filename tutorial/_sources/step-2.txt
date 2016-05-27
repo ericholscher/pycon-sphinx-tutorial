@@ -81,9 +81,16 @@ which allows you do to syntax like this:
    .. automodule:: crawler
 
 and have it document the full Python module importable as ``crawler``.
+You can also do a full range of auto functions:
+
+.. code-block:: rst
+
+   .. autoclass::
+   .. autofunction:: 
+   .. autoexception:: 
 
 .. warning:: The module must be importable by Sphinx when running.
-          We'll cover how to do this in the Tasks below.
+             We'll cover how to do this in the Tasks below.
 
 You can read more about this in the Sphinx :mod:`~sphinx.ext.autodoc` docs.
 
@@ -136,7 +143,7 @@ Do a::
 	make html
 
 Here you will see that the ``:option:`` blocks magically become links to the definition.
-This is your first taste of :term:`Semantic Markup`.
+This is your first taste of Semantic Markup.
 With Sphinx,
 we are able to simply say that something is a ``option``,
 and then it handles everything for us;
@@ -150,7 +157,7 @@ Wouldn't it be great if we could do that with actual code too?
 Sphinx makes this easy,
 let's take a look.
 
-We'll go ahead an create an ``api.rst`` that will hold our API reference:
+We'll go ahead and create an ``api.rst`` that will hold our API reference:
 
 .. literalinclude:: crawler/docs/step2/api.txt
    :language: rst
@@ -284,4 +291,3 @@ Could it get better?
 In fact,
 it can and it will.
 Let's go on to :doc:`step-3`.
-

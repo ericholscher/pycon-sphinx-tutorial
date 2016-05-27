@@ -1,8 +1,5 @@
 
 
-
-          
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -48,26 +45,27 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-nav-search">
-        
-
-        
-          <a href="index.html" class="icon icon-home"> Sphinx Tutorial
-        
-
-        
-        </a>
-
-        
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
           
-          
-            <div class="version">
-              1.0
-            </div>
-          
-        
 
-        
+          
+            <a href="index.html" class="icon icon-home"> Sphinx Tutorial
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,21 +74,14 @@
   </form>
 </div>
 
-        
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        
-
           
-          
+        </div>
 
-
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
-
-          
-          
-              <p class="caption"><span class="caption-text">Tutorial</span></p>
+            
+            
+                <p class="caption"><span class="caption-text">Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="start.html">Getting Started: Overview &amp; Introduction to Concepts</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Step 1: Getting started with RST</a><ul>
@@ -126,8 +117,6 @@
 <p class="caption"><span class="caption-text">Supplemental Material</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Cheat Sheet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="useful-links.html">Useful Links</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Step 1</span></p>
 <ul>
@@ -142,13 +131,10 @@
 <li class="toctree-l1"><a class="reference internal" href="crawler/docs/step3/index.html">Crawler Step 3 Documentation</a></li>
 </ul>
 
+            
           
-
-          
-
-        
+        </div>
       </div>
-      &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -163,7 +149,13 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
@@ -199,7 +191,7 @@ we&#8217;ll have the following pages:</p>
 and then we can talk more about the pages to create.</p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
-<p>A lot of these RST syntax examples are covered in the Sphinx <a class="reference external" href="http://sphinx-doc.org/rest.html#rst-primer" title="(in Sphinx v1.3.1+)"><span>reStructuredText Primer</span></a>.</p>
+<p>A lot of these RST syntax examples are covered in the Sphinx <a class="reference external" href="http://sphinx-doc.org/rest.html#rst-primer" title="(in Sphinx v1.4.1)"><span>reStructuredText Primer</span></a>.</p>
 <div class="section" id="sections">
 <span id="index-0"></span><h3>Sections<a class="headerlink" href="#sections" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-rst"><div class="highlight"><pre><span class="gh">Title</span>
@@ -303,7 +295,8 @@ Anyone who is coming to the project will need to install it.
 For our example,
 we are installing a basic Python script,
 so it will be pretty easy.</p>
-<p>Include the following in your <code class="docutils literal"><span class="pre">install.rst</span></code>, properly marked up:</p>
+<p>Include the following in your <code class="docutils literal"><span class="pre">install.rst</span></code>,
+on the same level as <code class="docutils literal"><span class="pre">index.rst</span></code>, properly marked up:</p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -327,6 +320,8 @@ pip install crawler
 <p class="first admonition-title">Note</p>
 <p class="last">Live Preview: <a class="reference internal" href="crawler/docs/step1/install.html"><em>Installation</em></a></p>
 </div>
+<p>You can now open the <code class="docutils literal"><span class="pre">support.html</span></code> file directly,
+but it isn&#8217;t showing on the navigation..</p>
 </div>
 <div class="section" id="create-support-page">
 <h3>Create Support page<a class="headerlink" href="#create-support-page" title="Permalink to this headline">¶</a></h3>
@@ -450,7 +445,7 @@ which is a live preview.</p>
 <p class="last">Use the <a class="reference internal" href="cheatsheet.html"><em>Cheat Sheet</em></a> for lots more ideas!</p>
 </div>
 <p>Looking for some ideas of what the syntax contains?
-The <a class="reference external" href="http://sphinx-doc.org/rest.html#rst-primer" title="(in Sphinx v1.3.1+)"><span>reStructuredText Primer</span></a> in the Sphinx docs is a great place to start.</p>
+The <a class="reference external" href="http://sphinx-doc.org/rest.html#rst-primer" title="(in Sphinx v1.4.1)"><span>reStructuredText Primer</span></a> in the Sphinx docs is a great place to start.</p>
 </div>
 <div class="section" id="moving-on">
 <h3>Moving on<a class="headerlink" href="#moving-on" title="Permalink to this headline">¶</a></h3>
@@ -482,7 +477,7 @@ The <a class="reference external" href="http://sphinx-doc.org/rest.html#rst-prim
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 

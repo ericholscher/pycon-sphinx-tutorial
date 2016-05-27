@@ -1,8 +1,5 @@
 
 
-
-          
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -48,26 +45,27 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-nav-search">
-        
-
-        
-          <a href="index.html" class="icon icon-home"> Sphinx Tutorial
-        
-
-        
-        </a>
-
-        
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
           
-          
-            <div class="version">
-              1.0
-            </div>
-          
-        
 
-        
+          
+            <a href="index.html" class="icon icon-home"> Sphinx Tutorial
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,21 +74,14 @@
   </form>
 </div>
 
-        
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        
-
           
-          
+        </div>
 
-
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
-
-          
-          
-              <p class="caption"><span class="caption-text">Tutorial</span></p>
+            
+            
+                <p class="caption"><span class="caption-text">Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="start.html">Getting Started: Overview &amp; Introduction to Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="step-1.html">Step 1: Getting started with RST</a></li>
@@ -126,8 +117,6 @@
 <p class="caption"><span class="caption-text">Supplemental Material</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Cheat Sheet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="useful-links.html">Useful Links</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Step 1</span></p>
 <ul>
@@ -142,13 +131,10 @@
 <li class="toctree-l1"><a class="reference internal" href="crawler/docs/step3/index.html">Crawler Step 3 Documentation</a></li>
 </ul>
 
+            
           
-
-          
-
-        
+        </div>
       </div>
-      &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -163,7 +149,13 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
@@ -188,7 +180,7 @@ so we want to make sure it stays up to date and correct.</p>
 <li>The documentation is up to date with the code</li>
 <li>The user is seeing the latest version of the docs</li>
 </ul>
-<p>We will solve the first problem with Sphinx&#8217;s <a class="reference external" href="http://sphinx-doc.org/ext/doctest.html#module-sphinx.ext.doctest" title="(in Sphinx v1.3.1+)"><code class="xref py py-mod docutils literal"><span class="pre">doctest</span></code></a> module.
+<p>We will solve the first problem with Sphinx&#8217;s <a class="reference external" href="http://sphinx-doc.org/ext/doctest.html#module-sphinx.ext.doctest" title="(in Sphinx v1.4.1)"><code class="xref py py-mod docutils literal"><span class="pre">doctest</span></code></a> module.
 The second problem we will solve by deploying our docs to <a class="reference external" href="https://readthedocs.org">Read the Docs</a>.</p>
 <div class="section" id="concepts">
 <h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
@@ -202,7 +194,7 @@ so that your docs are always up to date with your code!</p>
 <p class="first admonition-title">Warning</p>
 <p class="last">This only works for Python currently.</p>
 </div>
-<p>You can read the full Sphinx docs for <a class="reference external" href="http://sphinx-doc.org/ext/doctest.html#module-sphinx.ext.doctest" title="(in Sphinx v1.3.1+)"><code class="xref py py-mod docutils literal"><span class="pre">doctest</span></code></a>,
+<p>You can read the full Sphinx docs for <a class="reference external" href="http://sphinx-doc.org/ext/doctest.html#module-sphinx.ext.doctest" title="(in Sphinx v1.4.1)"><code class="xref py py-mod docutils literal"><span class="pre">doctest</span></code></a>,
 but here is a basic example:</p>
 <div class="highlight-rst"><div class="highlight"><pre><span class="p">..</span> <span class="ow">doctest</span><span class="p">::</span>
 
@@ -232,7 +224,7 @@ you can use <code class="docutils literal"><span class="pre">testsetup</span></c
 <p>The utils module is inside <code class="docutils literal"><span class="pre">crawler</span></code> is a good candidate for testing.
 It has small,
 self-contained pieces of logic that will work great as doctests.</p>
-<p>Open your <code class="docutils literal"><span class="pre">api.rst</span></code> module to your project that looks like:</p>
+<p>Open your <code class="docutils literal"><span class="pre">api.rst</span></code>, and update it to look like:</p>
 <div class="highlight-rst"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -389,7 +381,7 @@ and is free for all open source projects.</p>
 Let&#8217;s run the code and see if it actually works!</p>
 <div class="section" id="explore-doctests-more">
 <h3>Explore doctests more<a class="headerlink" href="#explore-doctests-more" title="Permalink to this headline">¶</a></h3>
-<p>Sphinx&#8217;s <a class="reference external" href="http://sphinx-doc.org/ext/doctest.html#module-sphinx.ext.doctest" title="(in Sphinx v1.3.1+)"><code class="xref py py-mod docutils literal"><span class="pre">doctest</span></code></a> module has more interesting options.
+<p>Sphinx&#8217;s <a class="reference external" href="http://sphinx-doc.org/ext/doctest.html#module-sphinx.ext.doctest" title="(in Sphinx v1.4.1)"><code class="xref py py-mod docutils literal"><span class="pre">doctest</span></code></a> module has more interesting options.
 You can do things that look more like normal unit tests,
 as well as specific &#8220;doctest-style&#8221; testing.
 Go in and re-write one of the existing tests to use the <code class="docutils literal"><span class="pre">testcode</span></code> directive instead of the <code class="docutils literal"><span class="pre">doctest</span></code> directive.</p>
@@ -437,7 +429,7 @@ Let&#8217;s head on over to <a class="reference internal" href="finish.html"><em
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 

@@ -49,13 +49,13 @@ It contains the example code that we will be documenting.
 
 You can clone it here::
 
-    git clone https://github.com/ericholscher/djangocon-sphinx-tutorial
+    git clone https://github.com/ericholscher/pycon-sphinx-tutorial
 
 
 Getting Started
 ---------------
 
-Now you are ready to creating documentation.
+Now you are ready to start creating documentation.
 You should have a directory called ``crawler``,
 which contains source code in it's ``src`` directory.
 Inside the ``crawler`` you should create a ``docs`` directory,
@@ -78,6 +78,7 @@ My output looks like this:
 
 .. literalinclude:: quickstart-output.txt
    :language: text
+   :linenos:
 
 Your file system should now look similar to this::
 
@@ -116,7 +117,7 @@ Inside of this is:
     The directory to include all your static files, like images.
 
 ``_templates``: 
-    Allows you to override Sphinx templates to customze look and feel.
+    Allows you to override Sphinx templates to customize look and feel.
 
 Building docs
 -------------

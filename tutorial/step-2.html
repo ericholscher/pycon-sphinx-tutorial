@@ -1,8 +1,5 @@
 
 
-
-          
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -48,26 +45,27 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-nav-search">
-        
-
-        
-          <a href="index.html" class="icon icon-home"> Sphinx Tutorial
-        
-
-        
-        </a>
-
-        
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
           
-          
-            <div class="version">
-              1.0
-            </div>
-          
-        
 
-        
+          
+            <a href="index.html" class="icon icon-home"> Sphinx Tutorial
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,21 +74,14 @@
   </form>
 </div>
 
-        
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        
-
           
-          
+        </div>
 
-
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
-
-          
-          
-              <p class="caption"><span class="caption-text">Tutorial</span></p>
+            
+            
+                <p class="caption"><span class="caption-text">Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="start.html">Getting Started: Overview &amp; Introduction to Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="step-1.html">Step 1: Getting started with RST</a></li>
@@ -130,8 +121,6 @@
 <p class="caption"><span class="caption-text">Supplemental Material</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Cheat Sheet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="useful-links.html">Useful Links</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Step 1</span></p>
 <ul>
@@ -146,13 +135,10 @@
 <li class="toctree-l1"><a class="reference internal" href="crawler/docs/step3/index.html">Crawler Step 3 Documentation</a></li>
 </ul>
 
+            
           
-
-          
-
-        
+        </div>
       </div>
-      &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -167,7 +153,13 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
@@ -234,7 +226,7 @@ Things like PEP&#8217;s and RFC&#8217;s:</p>
 <div class="highlight-rst"><div class="highlight"><pre>You can learn more about this at <span class="na">:pep:</span><span class="nv">`8`</span> or <span class="na">:rfc:</span><span class="nv">`1984`</span>.
 </pre></div>
 </div>
-<p>You can read more about this in the Sphinx <a class="reference external" href="http://sphinx-doc.org/markup/inline.html#inline-markup" title="(in Sphinx v1.3.1+)"><span>Inline markup</span></a> docs.</p>
+<p>You can read more about this in the Sphinx <a class="reference external" href="http://sphinx-doc.org/markup/inline.html#inline-markup" title="(in Sphinx v1.4.1)"><span>Inline markup</span></a> docs.</p>
 </div>
 <div class="section" id="automatically-generating-this-markup">
 <h3>Automatically generating this markup<a class="headerlink" href="#automatically-generating-this-markup" title="Permalink to this headline">¶</a></h3>
@@ -245,13 +237,19 @@ which allows you do to syntax like this:</p>
 <div class="highlight-rst"><div class="highlight"><pre><span class="p">..</span> <span class="ow">automodule</span><span class="p">::</span> crawler
 </pre></div>
 </div>
-<p>and have it document the full Python module importable as <code class="docutils literal"><span class="pre">crawler</span></code>.</p>
+<p>and have it document the full Python module importable as <code class="docutils literal"><span class="pre">crawler</span></code>.
+You can also do a full range of auto functions:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span class="p">..</span> <span class="ow">autoclass</span><span class="p">::</span>
+<span class="p">..</span> <span class="ow">autofunction</span><span class="p">::</span>
+<span class="p">..</span> <span class="ow">autoexception</span><span class="p">::</span>
+</pre></div>
+</div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">The module must be importable by Sphinx when running.
 We&#8217;ll cover how to do this in the Tasks below.</p>
 </div>
-<p>You can read more about this in the Sphinx <a class="reference external" href="http://sphinx-doc.org/ext/autodoc.html#module-sphinx.ext.autodoc" title="(in Sphinx v1.3.1+)"><code class="xref py py-mod docutils literal"><span class="pre">autodoc</span></code></a> docs.</p>
+<p>You can read more about this in the Sphinx <a class="reference external" href="http://sphinx-doc.org/ext/autodoc.html#module-sphinx.ext.autodoc" title="(in Sphinx v1.4.1)"><code class="xref py py-mod docutils literal"><span class="pre">autodoc</span></code></a> docs.</p>
 </div>
 </div>
 <div class="section" id="tasks">
@@ -381,7 +379,7 @@ Do a:</p>
 </pre></div>
 </div>
 <p>Here you will see that the <code class="docutils literal"><span class="pre">:option:</span></code> blocks magically become links to the definition.
-This is your first taste of <a class="reference internal" href="glossary.html#term-semantic-markup"><span class="xref std std-term">Semantic Markup</span></a>.
+This is your first taste of Semantic Markup.
 With Sphinx,
 we are able to simply say that something is a <code class="docutils literal"><span class="pre">option</span></code>,
 and then it handles everything for us;
@@ -394,7 +392,7 @@ linking between the definition and the usage.</p>
 Wouldn&#8217;t it be great if we could do that with actual code too?
 Sphinx makes this easy,
 let&#8217;s take a look.</p>
-<p>We&#8217;ll go ahead an create an <code class="docutils literal"><span class="pre">api.rst</span></code> that will hold our API reference:</p>
+<p>We&#8217;ll go ahead and create an <code class="docutils literal"><span class="pre">api.rst</span></code> that will hold our API reference:</p>
 <div class="highlight-rst"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -536,7 +534,7 @@ and Sphinx will fall back to intersphinx references if none exist in the current
 <div class="highlight-rst"><div class="highlight"><pre><span class="na">:ref:</span><span class="nv">`inline-markup`</span>
 </pre></div>
 </div>
-<p>You can read more about this in the <a class="reference external" href="http://sphinx-doc.org/ext/intersphinx.html#module-sphinx.ext.intersphinx" title="(in Sphinx v1.3.1+)"><code class="xref py py-mod docutils literal"><span class="pre">intersphinx</span></code></a> docs.</p>
+<p>You can read more about this in the <a class="reference external" href="http://sphinx-doc.org/ext/intersphinx.html#module-sphinx.ext.intersphinx" title="(in Sphinx v1.4.1)"><code class="xref py py-mod docutils literal"><span class="pre">intersphinx</span></code></a> docs.</p>
 </div>
 <div class="section" id="understand-the-code">
 <h3>Understand the code<a class="headerlink" href="#understand-the-code" title="Permalink to this headline">¶</a></h3>
@@ -630,7 +628,13 @@ and Sphinx will fall back to intersphinx references if none exist in the current
 86
 87
 88
-89</pre></div></td><td class="code"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">time</span>
+89
+90
+91
+92</pre></div></td><td class="code"><div class="highlight"><pre><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Main Module</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">from</span> <span class="nn">optparse</span> <span class="kn">import</span> <span class="n">OptionParser</span>
 <span class="c"># Python 3 compat</span>
 <span class="k">try</span><span class="p">:</span>
@@ -763,7 +767,7 @@ Let&#8217;s go on to <a class="reference internal" href="step-3.html"><em>Step 3
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
